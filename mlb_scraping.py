@@ -5,7 +5,9 @@ import os
 from os import path
 import traceback
 import requests
+import logging
 
+from console_progressbar import ProgressBar
 from bs4 import BeautifulSoup , Comment 
 from lxml import etree
 
@@ -14,6 +16,12 @@ def newtag(bs : BeautifulSoup, tagn : str ,text: str) :
     tag = bs.new_tag(tagn)
     tag.string = text 
     return tag
+
+def get_trace_value(plist):
+    trace = ''
+    for p in plist:
+        trace = trace + p + '/n'
+    return trace
 
 def load_mlb_schedule(year):
     
@@ -78,7 +86,8 @@ def load_mlb_schedule(year):
 
 def load_mlb_games(link, archivo, gamedate):
     
-
+    logfile = archivo.split('/')[1].replace('txt','log')
+    logging.basicConfig(filename = logfile, enconding ='utf-8',level=logging.INFO)
     try:
 
         #carga el archivo de los datos
@@ -93,7 +102,7 @@ def load_mlb_games(link, archivo, gamedate):
         #leer el contenido de la pagina
         html = reps.content
         if (html):  
-            print(f"Process {toc - tic+1:0.4} seconds url: {link}")
+            logging.info(f"Process {toc - tic+1:0.4} seconds url: {link}")
             soup = BeautifulSoup(html,'html.parser')
            
             #codigo de los equipos
@@ -126,16 +135,25 @@ def load_mlb_games(link, archivo, gamedate):
             file.close  
     except ValueError:
             file.close 
-            print("Error de Valor")
-            traceback.print_exception(*sys.exc_info())
+            print("Error de Valor : load_mlb_games ")
+            logging.error(get_trace_value(*sys.exc_info()))
     except:    
             file.close                     
-            print("Error de general") 
-            traceback.print_exception(*sys.exc_info())   
+            print("Error de general : load_mlb_games") 
+            logging.error(get_trace_value(*sys.exc_info()))
 
 #print(load_mlb_schedule(2018)) 
 #score  = 'https://www.baseball-reference.com/boxes/CHN/CHN201810020.shtml'                                            
 #load_mlb_games(score,2018)
-                                
-for score in load_mlb_schedule(2018):
+
+
+year = 2019
+sesson  = load_mlb_schedule(year)
+cnt = len(sesson)
+pr = 1
+pb = ProgressBar(total=cnt,prefix='Games progress ' + str(year) ,suffix='completed',decimals=2,length=50,fill='▐',zfill=' ')
+for score in sesson:
     load_mlb_games(score['link'], score['archivo'], score['fecha'])
+    pb.print_progress_bar(pr)
+    pr = pr + 1
+    
