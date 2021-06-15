@@ -1,0 +1,47 @@
+anaconda google colab
+Go By Xanthous Xenomorph on May 7 2020
+
+# same
+!wget -c https://repo.anaconda.com/miniconda/Miniconda3-4.5.4-Linux-x86_64.sh
+!chmod +x Miniconda3-4.5.4-Linux-x86_64.sh
+!bash ./Miniconda3-4.5.4-Linux-x86_64.sh -b -f -p /usr/local
+# update 1
+!conda install -q -y --prefix /usr/local python=3.6 ujson
+# update 2
+import sys
+sys.path.append('/usr/local/lib/python3.6/site-packages')
+# test it
+import ujson
+print(ujson.dumps({1:2}))
+
+
+
+
+
+# install Anaconda3
+!wget -qO ac.sh https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh 
+!bash ./ac.sh -b
+
+# a fake google.colab library
+!ln -s /usr/local/lib/python3.7/dist-packages/google \
+       /root/anaconda3/lib/python3.8/site-packages/google
+
+# start jupyterlab, which now has Python3 = 3.8
+!nohup /root/anaconda3/bin/jupyter-lab --ip=0.0.0.0&
+
+# access through ngrok, click the link
+!pip install pyngrok -q
+from pyngrok import ngrok
+print(ngrok.connect(8888))
+
+
+
+!pip install unittest 
+!pip install time 
+!pip install sys 
+!pip install os 
+!pip install traceback 
+!pip install requests 
+!pip install logging 
+!pip install console_progressbar  
+!pip install bs4 
