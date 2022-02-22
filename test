@@ -1,0 +1,114 @@
+[33mcommit b809b0428d725184adff0d91aed5e7151e806d28[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: eusebiogerman <eusebiogerman@gmail.com>
+Date:   Mon Jun 21 13:07:49 2021 -0400
+
+    Google Colab: Progress y logs (Pendiente corregir  carga por ECO)
+
+[33mcommit 8a870471e731e2a25a578d45993db638a2fdf71d[m
+Author: eusebiogerman <eusebiogerman@gmail.com>
+Date:   Fri Jun 18 18:13:36 2021 -0400
+
+    Google Colab : Logging, Progressbar y Mount drive
+
+[33mcommit a48a0de3a31709b9edd73035059b847aa922abf3[m
+Author: eusebiogerman <eusebiogerman@gmail.com>
+Date:   Thu Jun 17 23:18:17 2021 -0400
+
+    Googgle Colb: Fase preliminar , impresión y clasificación de las jugadas
+
+[33mcommit 38636288ba54c4e82f377c11bb7147c251c34a1a[m
+Author: eusebiogerman <eusebiogerman@gmail.com>
+Date:   Thu Jun 17 18:03:12 2021 -0400
+
+    Google Colb : Ordenar la lista y agregar el cuarto de cada jugada con sy jugador
+
+[33mcommit a486b5c8d493f448f63cf0eb5cf461c70cab5ae2[m
+Author: eusebiogerman <eusebiogerman@gmail.com>
+Date:   Tue Jun 15 23:52:03 2021 -0400
+
+    Google Colb : parcial  generacion de columnas y datos
+
+[33mcommit b744da10a4481d7a9a78320e44c39b1b63a3da8f[m
+Author: eusebiogerman <eusebiogerman@gmail.com>
+Date:   Tue Jun 15 07:16:06 2021 -0400
+
+    GColab : generacion de columnas
+
+[33mcommit fbf63f364ef53f37945ba2c9d98ef43f42ddf727[m
+Merge: b441b01 45e5801
+Author: eusebiogerman <eusebiogerman@gmail.com>
+Date:   Tue Jun 15 06:58:45 2021 -0400
+
+    Merge branch 'master' of https://github.com/eusebiogerman/WEBSCRAPING
+
+[33mcommit b441b01ce1cdb352e4cca3b0f1fb16fb8b375913[m
+Author: eusebiogerman <eusebiogerman@gmail.com>
+Date:   Tue Jun 15 06:56:30 2021 -0400
+
+    instalador python upagrde y conda google coalab
+
+[33mcommit 45e58019eec4412db549ed033d8415767d24ce19[m
+Author: eusebiogerman <eusebiogerman@gmail.com>
+Date:   Tue Jun 15 00:29:44 2021 -0400
+
+    listado de score de cada equipo
+
+[33mcommit 980a980a62eeaeeea59f5834be4506a7b88a28d5[m
+Author: eusebiogerman <eusebiogerman@gmail.com>
+Date:   Mon Jun 14 17:59:03 2021 -0400
+
+    Listado de NBA Games
+
+[33mcommit dc910fad6cdf69dd6203cf2201b5de04850901f6[m
+Author: eusebiogerman <eusebiogerman@gmail.com>
+Date:   Mon Jun 14 16:46:00 2021 -0400
+
+    scraping nba
+
+[33mcommit 5607af583352248bd56cf022e2371968464d338b[m
+Author: eusebiogerman <eusebiogerman@gmail.com>
+Date:   Mon Jun 14 15:01:15 2021 -0400
+
+    Google Colab : Version de prueba
+
+[33mcommit 0520c96e68f768b63a6d68fba62cadb45eb3f550[m
+Author: eusebiogerman <eusebiogerman@gmail.com>
+Date:   Sun Jun 13 21:20:52 2021 -0400
+
+    progress bar y logfile
+
+[33mcommit 3a2476a639c082801bcc30743a171dfd8b634d61[m
+Author: eusebiogerman <eusebiogerman@gmail.com>
+Date:   Sun Jun 13 17:26:53 2021 -0400
+
+    commit
+
+[33mcommit 8f9901313ff699b25d34ca4a25965711356cdda4[m
+Author: eusebiogerman <eusebiogerman@gmail.com>
+Date:   Sat Jun 12 18:26:56 2021 -0400
+
+    generar las temporadas por archivo y creacion de un nuevo archivo python .py
+
+[33mcommit 09abbf13db6548acd57ba99c0eb720ad04a68ffe[m
+Author: eusebiogerman <eusebiogerman@gmail.com>
+Date:   Sat Jun 12 09:28:40 2021 -0400
+
+    se agrego tres columna :fecha,vistante,homeclub
+
+[33mcommit 5e839f4314570ec3d77cd7ab8992e8748e3e3523[m
+Author: eusebiogerman <eusebiogerman@gmail.com>
+Date:   Fri Jun 11 08:09:09 2021 -0400
+
+    version 1.0.0.1 carga de lista por año
+
+[33mcommit 45efa588ed3da7fcfffa96d5a46789a6c70c734f[m
+Author: eusebiogerman <eusebiogerman@gmail.com>
+Date:   Fri Jun 11 05:53:47 2021 -0400
+
+    correccion de listado de juegos(schedule)
+
+[33mcommit c956b821a0c395985264c981eabf48e4b5f4e396[m
+Author: eusebiogerman <eusebiogerman@gmail.com>
+Date:   Thu Jun 10 20:34:10 2021 -0400
+
+    my webscraping
